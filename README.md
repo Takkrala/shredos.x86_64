@@ -803,7 +803,7 @@ $ sudo apt-get install mtools
 
 #### Download the ShredOS source using the git clone command, build ShredOS and write to a USB memory device.
 ```
-$ git clone https://github.com/PartialVolume/shredos.x86_64.git (or shredos.i686.git for 32bit)
+$ git clone https://github.com/Takkrala/shredos.x86_64.git (or shredos.i686.git for 32bit)
 $ cd shredos
 $ mkdir package/shredos
 $ touch package/shredos/Config.in
