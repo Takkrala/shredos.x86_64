@@ -4,11 +4,11 @@
 #
 ################################################################################
 
-NWIPE_VERSION = v0.41
+NWIPE_VERSION = v0.46
 NWIPE_SITE = $(call github,Takkrala,nwipe,$(NWIPE_VERSION))
 NWIPE_DEPENDENCIES = ncurses parted dmidecode coreutils
 NWipe_SITE_METHOD = tarball
-NWipe_SUBDIR = nwipe-0.41
+NWipe_SUBDIR = nwipe-0.46
 
 define NWIPE_INITSH
 	(cd $(@D) && cp ../../../package/nwipe/002-nwipe-banner-patch.sh $(@D) && ./002-nwipe-banner-patch.sh  && PATH="../../host/bin:${PATH}" ./autogen.sh);
