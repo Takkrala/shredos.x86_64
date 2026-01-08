@@ -6,12 +6,12 @@
 
 # Select the Git reference based on the Kconfig choice.
 ifeq ($(BR2_PACKAGE_NWIPE_VERSION_STABLE),y)
-NWIPE_VERSION = v1.0
+NWIPE_VERSION = v1.01
 else ifeq ($(BR2_PACKAGE_NWIPE_VERSION_GIT_REVISION),y)
 NWIPE_VERSION = $(call qstrip,$(BR2_PACKAGE_NWIPE_GIT_REVISION))
 else
 # Fallback – should not happen because the choice enforces exactly one option
-NWIPE_VERSION = v1.0
+NWIPE_VERSION = v1.01
 endif
 
 # Default Git repository URL (never empty).
