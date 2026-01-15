@@ -811,6 +811,7 @@ $ cd shredos
 $ mkdir package/shredos
 $ touch package/shredos/Config.in
 $ make clean
+$ edit /board/shredos/iso/ for build in appends
 $ make shredos_defconfig
 $ make
 $ ls output/images/shredos*.img
