@@ -798,11 +798,12 @@ sudo apt install \
 
 #### Download the ShredOS source using the git clone command, build ShredOS and write to a USB memory device.
 ```
-$ git clone https://github.com/PartialVolume/shredos.x86_64.git
+$ git clone https://github.com/Takkrala/shredos.x86_64.git
 $ cd shredos
 $ mkdir package/shredos
 $ touch package/shredos/Config.in
 $ make clean
+$ edit /board/shredos/iso/ for build in appends
 $ make shredos_defconfig
 $ make
 $ ls output/images/shredos*.img
