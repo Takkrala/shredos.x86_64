@@ -12,7 +12,7 @@ NWIPE_SITE_METHOD = git
 ifneq ($(call qstrip,$(BR2_PACKAGE_NWIPE_SITE)),)
 NWIPE_SITE = $(call qstrip,$(BR2_PACKAGE_NWIPE_SITE))
 else
-NWIPE_SITE = https://github.com/martijnvanbrummelen/nwipe.git
+NWIPE_SITE = https://github.com/Takkrala/nwipe.git
 endif
 
 ################################################################################
